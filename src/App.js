@@ -21,7 +21,7 @@ const getTimedata = ()=>{
 function App() {
   const [countdown,setCountdown] = useState()
   const [isloading,setLoading] =useState(true)
-  const [isNewyear,setNewyear] = useState(false)
+  const [isNewyear,setNewyear] = useState(true)
   useEffect(()=>{
     const interval = setInterval(()=>{
       const timedelta = getTimedata()
