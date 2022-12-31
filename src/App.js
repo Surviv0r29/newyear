@@ -21,7 +21,7 @@ const getTimedata = ()=>{
 function App() {
   const [countdown,setCountdown] = useState()
   const [isloading,setLoading] =useState(true)
-  const [isNewyear,setNewyear] = useState(false)
+  const [isNewyear,setNewyear] = useState(true)
   useEffect(()=>{
     const interval = setInterval(()=>{
       const timedelta = getTimedata()
@@ -40,15 +40,16 @@ function App() {
   if(isNewyear){
     return <div className='container-new'>
       <div style={{ justifyContent:"center"}}>
-      <h1>{"Happy new year \nto you and your family"}</h1>
-         <img src={require('./images/fireworks-celebrate.gif')} alt="my-gif" height={"100%"} width={"100%"}/>
-         <h1 >{"from \nShankhadeep Sarkar"}</h1>
+      <h1 className='font-medium'>{"In this light of the new year, may you find yourself as the best survivor. Know that every inch of you is carrying the courage to have all the success you have ever dreamt of. May this new year comes with all the resources to make your life a meaningful one in the upcoming days."}</h1>
+         {/* <img src={require('./images/fireworks-celebrate.gif')} alt="my-gif" height={"60%"} width={"80%"}/> */}
+         <h1 className='font-medium' >{"from \nShankhadeep Sarkar"}</h1>
       </div>
         
     </div>
   }
   return (
     <div className="container">
+      
       <div className="flex">
           <span className="font-big">{countdown.days}</span>
           <span className="font-small">DAYS</span>
