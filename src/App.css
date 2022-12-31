@@ -34,7 +34,7 @@ body{
   display: flex;
   gap:35px;
   background-repeat: no-repeat;
-  background-image: url("./images/fireworks-celebrate.gif");
+  /* background-image: url("./images/fireworks-celebrate.gif"); */
 }
 .flex{
   display: flex;

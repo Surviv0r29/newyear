@@ -40,8 +40,9 @@ function App() {
   if(isNewyear){
     return <div className='container-new'>
       <div style={{ justifyContent:"center"}}>
+        <img src={require('./images/fireworks-celebrate.gif')} alt="my-gif" height={"60%"} width={"100%"}/>
       <h1 className='font-medium'>{"In this light of the new year, may you find yourself as the best survivor. Know that every inch of you is carrying the courage to have all the success you have ever dreamt of. May this new year comes with all the resources to make your life a meaningful one in the upcoming days."}</h1>
-         {/* <img src={require('./images/fireworks-celebrate.gif')} alt="my-gif" height={"60%"} width={"80%"}/> */}
+         
          <h1 className='font-medium' >{"from \nShankhadeep Sarkar"}</h1>
       </div>
         
